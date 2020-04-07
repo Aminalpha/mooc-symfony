@@ -1,0 +1,9 @@
+{% extends "Advert/layout.html.twig" %}
+
+{% block body %}
+    {% for mess in app.flashes("message") %}
+
+        <div class="alert alert-info"> <p>{{ mess }}</p> </div>
+
+    {% endfor %}
+{% endblock %}

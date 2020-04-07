@@ -1,0 +1,20 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+# hello_the_world:
+#     path: /hello-world
+#     controller: App\Controller\AdvertController::index
+
+home:
+    path: /
+    controller: App\Controller\AdvertController::home
+
+contact:
+    path: /contact
+    controller: App\Controller\AdvertController::contact
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout

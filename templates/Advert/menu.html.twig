@@ -1,0 +1,11 @@
+{# templates/Advert/menu.html.twig #}
+
+<ul class="nav nav-pills nav-stacked">
+  {% for advert in listAdverts %}
+    <li>
+      <a href="{{ path('oc_advert_view', {'advert_id': advert.id}) }}">
+        {{ advert.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
